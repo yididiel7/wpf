@@ -11,9 +11,6 @@
     <ItemGroup>
       <_WinFormsContent Include="$(_WinFormsContentPath)" />
     </ItemGroup>
-
-    <Error Text="Microsoft.Private.Winforms NuGet package contains no content. Is this expected?"
-           Condition="@(_WinFormsContent->Count()) == 0"/>
   </Target>
 
 </Project>
